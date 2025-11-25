@@ -42,13 +42,13 @@
 }
 
 /* --- 6. Recipe & Suggestion Modules (Flexbox) --- */
-.recipe-list, .suggestion-list {
+.brands-list, .suggestion-list {
     display: flex;
     gap: 16px;
     flex-wrap: wrap;
 }
 
-.recipe-card {
+.brands-card {
     display: flex;
     flex-direction: column;
     width: 280px; 
@@ -59,7 +59,7 @@
     margin-bottom: 20px;
 }
 
-.recipe-title {
+.brands-title {
     order: 1;
     background-color: #E68A00; /* Strong Orange */
     color: #000000;
@@ -69,7 +69,7 @@
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 
-.recipe-card img {
+.brands-card img {
     width: 100%;
     height: 140px; 
     object-fit: cover;

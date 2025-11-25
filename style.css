@@ -122,6 +122,14 @@ padding-top: 10px;
 
 }
 
+.information{
+   padding: 0px;
+   text-align: center;
+   font-size: 15px;
+   font-weight: 500;
+
+}
+
 /* --- 6. Brands & Suggestion Modules (Flexbox) --- */
 .brands-list, .suggestion-list {
     display: flex;
@@ -139,7 +147,8 @@ padding-top: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
     overflow: hidden; 
     margin-bottom: 20px;
-    margin: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     justify-content: center;
 }
 

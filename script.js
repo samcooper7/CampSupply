@@ -7,7 +7,6 @@ function displayPopUp(){
         alert("You did not enter an email. Subscription cancelled.");
     } else {
         alert("Thank you for subscribing to our newsletter!");
-      
     }
 }
 

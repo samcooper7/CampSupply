@@ -6,6 +6,8 @@ const allFooterLinks = document.querySelectorAll('.footer-list');
 const resetBtn = document.querySelector('#resetBtn');
 const bodyColour = document.querySelector('body');
 const switchMode = document.querySelector('#switchMode');
+const cardBody = document.querySelectorAll('.card-body');
+const btnColour = document.querySelectorAll('.btn-primary');
 
 function resetPage() {
     location.reload();
@@ -51,6 +53,30 @@ function switchColourMode() {
 
     if (currentBg == 'rgb(255, 255, 255)') {
         bodyColour.style.backgroundColor = '#000000';
+
+        allHTags.forEach(tag => {
+            getComputedStyle(tag).color; 
+            tag.style.color = '#ffffff';
+        });
+
+        allPTags.forEach(tag => {
+            getComputedStyle(tag).color; 
+            tag.style.color = '#ffffff';
+        });
+
+        cardBody.forEach(card => {
+            getComputedStyle(card).backgroundColor;
+            card.style.backgroundColor = '#778873';
+        })
+
+        btnColour.forEach(btn => {
+            getComputedStyle(btn).backgroundColor;
+            btn.style.backgroundColor = '#212521';
+
+            getComputedStyle(btn).borderColor;
+            btn.style.borderColor = '#212521';
+        })
+
         console.log('dark mode')
     } else if (currentBg == 'rgb(0, 0, 0)') {
         bodyColour.style.backgroundColor = '#ffffff';

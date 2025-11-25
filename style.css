@@ -29,6 +29,8 @@ img {
 }
 #camp-supply-image {
     border-radius: 60%;
+    height: auto;
+    width: 100px;
 }
 
 .carousel-btn {

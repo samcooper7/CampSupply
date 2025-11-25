@@ -112,60 +112,9 @@
     </div>
 
     <!-- Meet Simon & Recommendations (Maisie)-->
-
-    <!-- <div class="outer-container">
-
-        <div class="card text-bg-dark">
-            <img id="simon" src="assets/simon-says-2.png" class="card-img" alt="Simon is camping." />
-            <div class="card-img-overlay">
-                <h3 class="card-title"><strong>Meet Simon</strong></h3>
-                <p class="card-footer">
-                Simon grew up camping with his dad and has been passionate about the outdoors ever since. He’s tested countless pieces of camping gear and 
-                loves helping others find reliable equipment for their adventures. Click below to check out what Simon recommends this month!
-                </p>
-                <a href="#" class="btn btn-success">Simon says... see our products of the week!</a>
-            </div>
-        </div>
-
-        <div class="inner-container">    
-            <div id="recommend-card" class="card mb-3" style="max-width: 540px;">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                    <img id="recommend" src="/assets/camping-stove.jpg" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                    <div class="card-body">
-                        <h3>Simon's Pick: Stoves</h3>
-                        <h5 class="card-title">Camp Chef Everest 2X </h5>
-                        <p class="card-text">A wind-resistant stove with an impressive output and easy maintenance.</p>
-                        <a href="#" class="btn btn-success">See more</a>
-                    </div>
-                    </div>
-                </div>
-            </div>
-            <div id="recommend-card" class="card mb-3" style="max-width: 540px;">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img id="recommend" src="/assets/tent.jpg" class="img-fluid rounded-start" alt="Marmot Halo 6 Tent">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h3>Simon's Pick: Tents</h3>
-                                <h5 class="card-title">Marmot Halo 6</h5>
-                                <p class="card-text">The best balance of size, quality, style, and ease of use I've found.</p>
-                                <a href="#" class="btn btn-success">See more</a>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    
-    
-    <div class="recommendations container d-flex justify-content-center my-5" style="border: 1px solid black;">
-        <div class="simonSays w-100" style="border: 1px solid black;">
+     
+    <div class="recommendations container d-flex justify-content-center my-5 gap-2">
+        <div class="simonSays w-100">
             <div class="card text-bg-dark">
                 <img id="simon" src="assets/simon-says-2.png" class="card-img" alt="Simon is camping." />
                 <div class="card-img-overlay">
@@ -174,23 +123,43 @@
                     Simon grew up camping with his dad and has been passionate about the outdoors ever since. He’s tested countless pieces of camping gear and 
                     loves helping others find reliable equipment for their adventures. Click below to check out what Simon recommends this month!
                     </p>
-                    <a href="#" class="btn btn-success">Simon says... see our products of the week!</a>
+                    <a href="#" class="btn" style="background-color: #212521; color: white;">Simon says... see our products of the week!</a>
                 </div>
             </div>
         </div>
-        <div class="spotlight d-flex flex-column justify-content-between w-100" style="border: 1px solid black;">
-            <div class="firstSpotlight h-100" style="border: 1px solid black; height: 100px;">
-                <div class="row">
-                    <div class="col-4">
-                        <img src="assets/camping-stove.jpg" alt="Camping Stove" class="w-100">
+        <div class="spotlight d-flex justify-content-between flex-column w-100 gap-3">
+            <div class="firstSpotlight">
+                <div class="card mb-3 d-flex justify-content-center align-items-center h-100" style="width: 100%; background-color: #778873;">
+                    <div class="row g-0">
+                        <div class="col-md-4 ps-2">
+                            <img src="assets/camping-stove.jpg" class="rounded-start w-100 h-100 object-fit-cover" alt="Camping stove">
+                        </div>
+                        <div class="col-md-8 h-100">
+                            <div class="card-body d-flex flex-column align-items-stretch h-100 text-white">
+                                <h3>Simon's Pick: Stoves</h3>
+                                <h5 class="card-title">Camp Chef Everest 2X </h5>
+                                <p class="card-text">A wind-resistant stove with an impressive output and easy maintenance.</p>
+                                <button class="btn" style="background-color: #212521; color: white;">View Stoves</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-8"></div>
                 </div>
             </div>
-            <div class="secondSpotlight h-100" style="border: 1px solid black; height: 100px;">
-                <div class="row">
-                    <div class="col-4"></div>
-                    <div class="col-8"></div>
+            <div class="secondSpotlight">
+                <div class="card mb-3 d-flex justify-content-center align-items-center h-100" style="width: 100%; background-color: #778873;">
+                    <div class="row g-0">
+                        <div class="col-md-4 ps-2">
+                            <img src="assets/tent.jpg" class="rounded-start w-100 h-100 object-fit-cover" alt="Camping stove">
+                        </div>
+                        <div class="col-md-8 h-100">
+                            <div class="card-body d-flex flex-column align-items-stretch h-100 text-white">
+                                <h3>Simon's Pick: Stoves</h3>
+                                <h5 class="card-title">Camp Chef Everest 2X </h5>
+                                <p class="card-text">A wind-resistant stove with an impressive output and easy maintenance.</p>
+                                <button class="btn" style="background-color: #212521; color: white;">View Tents</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

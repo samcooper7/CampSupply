@@ -1,14 +1,36 @@
 img {
-    width: 100px;
+    width: 400px;
     height: 150px;
 }
 
 .card-body{
-    height: 200px;
+    height: 300px;
 }
 
-.devider {
+.col {
+    justify-items: center;
+}
+
+.btn-primary {
+background-color: #3d5e35;
+}
+
+#categories{
     padding: 20px;
+    
+    justify-self: center;
+}
+
+.card-text-cat {
+font-size: 12px;
+height: 120px;
+padding-top: 10px;
+}
+
+.card-title-cat {
+    height: 50px;
+    align-content: center;
+    padding: 10px;
 }
 .carousel-indicators {
     color: black;

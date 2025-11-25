@@ -7,8 +7,10 @@ function displayPopUp(){
         alert("You did not enter an email. Subscription cancelled.");
     } else {
         alert("Thank you for subscribing to our newsletter!");
-      
     }
+}
+
+    
 const minusBtn = document.querySelector('#minusBtn');
 const plusBtn = document.querySelector('#plusBtn');
 const allPTags = document.querySelectorAll('p');

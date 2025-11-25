@@ -11,9 +11,9 @@ img {
     justify-items: center;
 }
 
-
-
-
+.btn-primary {
+background-color: #3d5e35;
+}
 
 #categories{
     padding: 20px;

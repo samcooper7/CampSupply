@@ -9,6 +9,8 @@ function displayPopUp(){
         alert("Thank you for subscribing to our newsletter!");
       
     }
+}
+
 const minusBtn = document.querySelector('#minusBtn');
 const plusBtn = document.querySelector('#plusBtn');
 const allPTags = document.querySelectorAll('p');

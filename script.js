@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 function displayPopUp(){
     let text = "Subscribe to our newsletter for exclusive discounts and offers!";
     let email = prompt(text, "Enter your email here");
@@ -8,7 +7,8 @@ function displayPopUp(){
         alert("You did not enter an email. Subscription cancelled.");
     } else {
         alert("Thank you for subscribing to our newsletter!");
-=======
+      
+    }
 const minusBtn = document.querySelector('#minusBtn');
 const plusBtn = document.querySelector('#plusBtn');
 const allPTags = document.querySelectorAll('p');
@@ -17,6 +17,8 @@ const allFooterLinks = document.querySelectorAll('.footer-list');
 const resetBtn = document.querySelector('#resetBtn');
 const bodyColour = document.querySelector('body');
 const switchMode = document.querySelector('#switchMode');
+const cardBody = document.querySelectorAll('.card-body');
+const btnColour = document.querySelectorAll('.btn-primary');
 
 function resetPage() {
     location.reload();
@@ -62,10 +64,33 @@ function switchColourMode() {
 
     if (currentBg == 'rgb(255, 255, 255)') {
         bodyColour.style.backgroundColor = '#000000';
+
+        allHTags.forEach(tag => {
+            getComputedStyle(tag).color; 
+            tag.style.color = '#ffffff';
+        });
+
+        allPTags.forEach(tag => {
+            getComputedStyle(tag).color; 
+            tag.style.color = '#ffffff';
+        });
+
+        cardBody.forEach(card => {
+            getComputedStyle(card).backgroundColor;
+            card.style.backgroundColor = '#778873';
+        })
+
+        btnColour.forEach(btn => {
+            getComputedStyle(btn).backgroundColor;
+            btn.style.backgroundColor = '#212521';
+
+            getComputedStyle(btn).borderColor;
+            btn.style.borderColor = '#212521';
+        })
+
         console.log('dark mode')
     } else if (currentBg == 'rgb(0, 0, 0)') {
         bodyColour.style.backgroundColor = '#ffffff';
         console.log('light mode')
->>>>>>> 494d972fbb9957590cb1b422f459b0bbe71cb85e
     }
 }

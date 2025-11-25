@@ -9,8 +9,9 @@ img {
 
 .col {
     justify-items: center;
-
 }
+
+
 
 
 
@@ -20,13 +21,16 @@ img {
     justify-self: center;
 }
 
-.card-text {
+.card-text-cat {
 font-size: 12px;
 height: 120px;
+padding-top: 10px;
 }
 
-.card-title {
+.card-title-cat {
     height: 50px;
+    align-content: center;
+    padding: 10px;
 }
 .carousel-indicators {
     color: black;

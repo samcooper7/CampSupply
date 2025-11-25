@@ -55,6 +55,28 @@ padding-top: 10px;
     width: 100px;
 }
 
+#newsletter-btn {
+    height: 40px;
+    width: 280px;
+    text-align: center;
+    font-size: 15px;
+    background-color: #778873;
+    color: white;
+    border-radius: 15px;
+    box-shadow: #000000 0px 4px 8px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 15px;
+}
+
 .carousel-btn {
     position: absolute;
     top: 70%;
@@ -140,6 +162,7 @@ padding-top: 10px;
     border-radius: 0 0 6px 6px;
 }
 
+/* --- Recommendations and Simon ---*/
 .card-img-overlay {
   display: flex;
   flex-direction: column;
@@ -150,9 +173,10 @@ padding-top: 10px;
 }
 
 .card {
-    height: 450px;
+    height: fit-content;
     width: 800px;
     overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 #simon {
@@ -162,7 +186,7 @@ padding-top: 10px;
 
 }
 
-.container1 {
+.outer-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -170,4 +194,133 @@ padding-top: 10px;
     height: auto;
     width: auto;
     margin: 100px;
+}
+
+
+.inner-container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+#recommend-card {
+    width: 100%;
+    height: auto;
+    box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#recommend {
+    width:100%;
+    height: 15vw;
+    object-fit: cover;
+    position: relative
+  
+}
+
+/* --- Cart page --- */
+
+.container-fluid-cart {
+    padding: 50px;
+}
+
+.checkout-cards{
+    box-shadow: rgba(0, 0, 0, 0.35);
+    display: flex;
+    gap: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.checkout-card {
+    width: 100px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+}
+
+.card-link {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.card-body-cart {
+    height: 150px;
+    margin-top: 20px;
+
+}
+
+.card-buttons {
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.card-buttons .p {
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+    font-size: 20px;
+}
+ /* --- SHIPPING --- */
+
+ #shipping-title {
+    text-align: center;
+    align-items: center;
+    text-decoration: underline;
+}
+.shipping {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 70px;
+}
+
+.shipping h2{
+    text-align: center;
+    align-items: center;
+}
+
+table, th, td {
+  border: 1px solid;
+  padding: 10px;
+}
+
+
+.cart-header {
+    text-align: center;
+    font-size: 36px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cart-buttons {
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 50px;
+}
+
+#checkoutBtn {
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    background-color: #778873;
+    font-size: 20px;
+    border: none;
+}
+
+#continueShoppingBtn {
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    background-color: #555555;
+    font-size: 20px;
 }

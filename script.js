@@ -80,6 +80,5 @@ function switchColourMode() {
         console.log('dark mode')
     } else if (currentBg == 'rgb(0, 0, 0)') {
         bodyColour.style.backgroundColor = '#ffffff';
-        console.log('light mode')
     }
 }

@@ -15,6 +15,9 @@
     object-fit: cover;
     position: relative;    
 }
+#camp-supply-image {
+    border-radius: 60%;
+}
 
 .carousel-btn {
     position: absolute;

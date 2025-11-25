@@ -58,11 +58,12 @@ img {
 
 }
 
-/* --- 6. Recipe & Suggestion Modules (Flexbox) --- */
+/* --- 6. Brands & Suggestion Modules (Flexbox) --- */
 .brands-list, .suggestion-list {
     display: flex;
-    gap: 16px;
+    gap: 0px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .brands-card {
@@ -74,11 +75,13 @@ img {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); 
     overflow: hidden; 
     margin-bottom: 20px;
+    margin: 20px;
+    justify-content: center;
 }
 
 .brands-title {
     order: 1;
-    background-color: #E68A00; /* Strong Orange */
+    background-color: #778873; /* Strong Orange */
     color: #000000;
     padding: 16px;
     border-radius: 6px 6px 0 0;

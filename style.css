@@ -5,11 +5,12 @@ img {
 }
 
 .card-body{
-    height: 200px;
+    height: 300px;
 }
 
 .col {
     justify-items: center;
+
 }
 
 .devider {
@@ -20,4 +21,13 @@ img {
     padding: 20px;
     
     justify-self: center;
+}
+
+.card-text {
+font-size: 12px;
+height: 120px;
+}
+
+.card-title {
+    height: 50px;
 }

@@ -10,7 +10,6 @@ function displayPopUp(){
     }
 }
 
-    
 const minusBtn = document.querySelector('#minusBtn');
 const plusBtn = document.querySelector('#plusBtn');
 const allPTags = document.querySelectorAll('p');

@@ -1,12 +1,23 @@
 img {
-    width: 100px;
+    width: 400px;
     height: 150px;
+    object-fit: cover;
 }
 
 .card-body{
     height: 200px;
 }
 
+.col {
+    justify-items: center;
+}
+
 .devider {
     padding: 20px;
+    justify-content: center;
+}
+#categories{
+    padding: 20px;
+    
+    justify-self: center;
 }

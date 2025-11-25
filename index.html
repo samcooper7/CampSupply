@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/7ac16726b9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/campsupply.png">
+    <link rel="shortcut icon" href="assets/campsupply.png">
     <title>Camp Supply</title>
 </head>
 <body>
     <!-- Navbar (Leanne)-->
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary py-4">
+    <nav class="navbar navbar-expand-lg" style="background-color: #505143;">
         <div class="container-fluid">
 
             <a class="navbar-brand me-0" style="width: 38%;" href="#">
-                <img src="" alt="CampSupply Logo">
+                <img id="camp-supply-image" src="assets/campsupply.png" alt="CampSupply Logo" height="100px" width="100px">
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,24 +28,35 @@
             <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="width: 400px;"/>
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <button class="btn" type="submit"><i class="fa-solid fa-magnifying-glass text-white"></i></button>
                 </form>
 
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
                     <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#"><i class="fa-regular fa-user"></i></a>
+                        <a class="nav-link" aria-current="page" href="#"><i class="fa-regular fa-user text-white"></i></a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping text-white"></i></a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Accessibility Options
                         </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-font me-2"></i>Font Size</a></li>
-                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-palette me-2"></i>Colour Contrast</a></li>
-                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-circle-half-stroke me-2"></i>Dark / Light Mode</a></li>
+                        <ul class="dropdown-menu w-fit" style="left: -20px;">
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-font me-2"></i>
+                                Font Size
+                                <div class="btn-group ms-2" role="group" aria-label="Basic outlined example">
+                                    <button id="minusBtn" type="button" class="btn btn-outline-secondary" onclick="getSmaller()">-</button>
+                                    <button id="plusBtn" type="button" class="btn btn-outline-secondary" onclick="getBigger()">+</button>
+                                </div>
+                            </a></li>
+                            <li onclick="switchColourMode()" id="switchMode"><a class="dropdown-item" href="#"><i class="fa-solid fa-circle-half-stroke me-2"></i>
+                                Dark / Light Mode
+                            </a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#" id="resetBtn" onclick="resetPage()">
+                                Reset
+                            </a></li>
                         </ul>
                     </li>
                 </ul>
@@ -63,11 +77,13 @@
   <div class="carousel-inner">
     <div class="carousel-item active">
         <a href="#" link="" class="carousel-btn">View All Events</a>
-      <img src="assets/bonfire.jpg" class="d-block w-100" alt="carousel1" height="100px">
+        <a class="carousel-info">Our Annual Bonfire Night</a>
+      <img src="assets/bonfire.jpg" class="d-block w-100" alt="carousel1">
       <div class="carousel-caption d-none d-md-block">
       </div>
     </div>
     <div class="carousel-item">
+        <a class="carousel-info">Kids Go Camping Event</a>
         <a href="#" link="" class="carousel-btn">View All Events</a>
       <img src="assets/campsite.jpg" class="d-block w-100" alt="carousel2">
       <div class="carousel-caption d-none d-md-block">
@@ -76,9 +92,9 @@
       </div>
     </div>
     <div class="carousel-item">
+        <a class="carousel-info">Family Camping Weekend</a>
         <a href="#" link="" class="carousel-btn">View All Events</a>
       <img src="assets/campsite2.jpg" class="d-block w-100" alt="carousel3">
-      <p>hello sam version</p>
       <div class="carousel-caption d-none d-md-block">
  
       </div>
@@ -97,6 +113,19 @@
 
     <!-- Meet Simon & Recommendations (Maisie)-->
 
+    <div class="container1">
+    <div class="card text-bg-dark">
+      <img id="simon" src="assets/simon-says-2.png" class="card-img" alt="Simon is camping." />
+      <div class="card-img-overlay">
+        <h3 class="card-title"><strong>Meet Simon</strong></h3>
+        <p class="card-footer">
+          Simon grew up camping with his dad and has been passionate about the outdoors ever since. He’s tested countless pieces of camping gear and 
+          loves helping others find reliable equipment for their adventures. Click below to check out what Simon recommends this month!
+        </p>
+        <a href="#" class="btn btn-success">Simon says... see our products of the week!</a>
+      </div>
+    </div>
+    </div>
 
     <!-- Categories (Olivia) -->
 
@@ -184,39 +213,90 @@
     <!-- Brands We Sell (Clarence)-->
     <main class="content-area">
             
-            <section class="recipe-section module-card">
+            <section class="brands-section module-card">
                 <div class="header">
-                <h5>Brands We Sell!</h5>
+                <h5>Brands We Sell</h5>
                 </div>
-                <div class="recipe-list">
-                    <div class="recipe-card">
-                        <div class="recipe-title accent-box">The North Face</div>
-                        <img src="/assets/The_North_Face.png" alt="Image of Thai red curry" loading="lazy">
+                <div class="brands-list">
+                    <div class="brands-card">
+                        <div class="brands-title accent-box">The North Face</div>
+                        <img src="/assets/The_North_Face.png" alt="Image of North face logo" loading="lazy">
                     </div>
                     
-                    <div class="recipe-card">
-                        <div class="recipe-title accent-box">Columbia Sportswear</div>
-                        <img src="/assets/Columbia-logo.png" alt="Image of Chicken madras" loading="lazy">
+                    <div class="brands-card">
+                        <div class="brands-title accent-box">Columbia Sportswear</div>
+                        <img src="/assets/Columbia-logo.png" alt="Image of Columbia logo" loading="lazy">
                     </div>
                     
-                    <div class="recipe-card">
-                        <div class="recipe-title accent-box">Patagonia</div>
-                        <img src="/assets/Patagonia-Logo.png" alt="Image of Pad thai" loading="lazy">
+                    <div class="brands-card">
+                        <div class="brands-title accent-box">Patagonia</div>
+                        <img src="/assets/Patagonia-Logo.png" alt="Image of Patagonia logo" loading="lazy">
                     </div>
-                      <div class="recipe-card">
-                        <div class="recipe-title accent-box">Gucci</div>
-                        <img src="/assets/Gucci-Logo.png" alt="Image of Thai red curry" loading="lazy">
+                      <div class="brands-card">
+                        <div class="brands-title accent-box">Gucci</div>
+                        <img src="/assets/Gucci-Logo.png" alt="Image of Gucci" loading="lazy">
                     </div>
                     
-                    <div class="recipe-card">
-                        <div class="recipe-title accent-box">Berghaus</div>
-                        <img src="/assets/logo-berghaus-.png" alt="Image of Chicken madras" loading="lazy">
+                    <div class="brands-card">
+                        <div class="brands-title accent-box">Berghaus</div>
+                        <img src="/assets/logo-berghaus-.png" alt="Image of Berghaus" loading="lazy">
                     </div>
                 </div>
             </section>
 
 
     <!-- Footer (Leanne)-->
+    <footer class="bg-dark text-light py-5 mt-auto border-top border-secondary">
+        <div class="container">
+            <div class="row g-5">
+
+            <!-- Logo + Year -->
+            <div class="col-md-3 d-flex flex-column">
+                <div class="mb-2 text-center">
+                    <img src="assets/campsupply.png" alt="CampSupply Logo" style="width: 60%; height: auto; border-radius: 50%;">
+                </div>
+                <p class="text-center">CampSupply © 2025</p>
+            </div>
+
+            <!-- Column 1 -->
+            <div class="col-6 col-md-3">
+                <h5 class="fw-semibold mb-3">About Us</h5>
+                <ul class="list-unstyled footer-list">
+                <li><a class="text-decoration-none text-light" href="#">About CampSupply</a></li>
+                <li><a class="text-decoration-none text-light" href="#">Environmental Criteria</a></li>
+                <li><a class="text-decoration-none text-light" href="#">Careers</a></li>
+                <li><a class="text-decoration-none text-light" href="#">Our Partners</a></li>
+                <li><a class="text-decoration-none text-light" href="#">Explore More</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="col-6 col-md-3">
+                <h5 class="fw-semibold mb-3">Shopping</h5>
+                <ul class="list-unstyled footer-list">
+                <li><a class="text-decoration-none text-light" href="#">Find a Store</a></li>
+                <li><a class="text-decoration-none text-light" href="#">Home Delivery</a></li>
+                <li><a class="text-decoration-none text-light" href="#">Click & Collect</a></li>
+                <li><a class="text-decoration-none text-light" href="#">Online Exclusives</a></li>
+                <li><a class="text-decoration-none text-light" href="#">Gift Cards & eVouchers</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3 -->
+            <div class="col-6 col-md-3">
+                <h5 class="fw-semibold mb-3">Customer Services</h5>
+                <ul class="list-unstyled footer-list">
+                <li><a class="text-decoration-none text-light" href="#">Repairs Guide</a></li>
+                <li><a class="text-decoration-none text-light" href="#">Help Centre</a></li>
+                <li><a class="text-decoration-none text-light" href="#">Contact Us</a></li>
+                <li><a class="text-decoration-none text-light" href="#">Returns & Exchanges</a></li>
+                <li><a class="text-decoration-none text-light" href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            </div>
+        </div>
+    </footer>
 
 
     <!-- JavaScript Files -->

@@ -1,7 +1,6 @@
 img {
     width: 400px;
     height: 150px;
-    object-fit: cover;
 }
 
 .card-body{
@@ -13,10 +12,8 @@ img {
 
 }
 
-.devider {
-    padding: 20px;
-    justify-content: center;
-}
+
+
 #categories{
     padding: 20px;
     
@@ -30,4 +27,143 @@ height: 120px;
 
 .card-title {
     height: 50px;
+}
+.carousel-indicators {
+    color: black;
+}
+
+.carousel-inner {
+    color: black;
+}
+
+.carousel {
+    max-height: 200px;
+}
+
+.carousel-item img {
+    height: 200px;       
+    object-fit: cover;
+    position: relative;    
+}
+#camp-supply-image {
+    border-radius: 60%;
+    height: auto;
+    width: 100px;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+    
+    padding: 7px;
+    background-color: rgba(0, 0, 0, 0.99);
+    box-shadow: #000000 0px 4px 8px 0px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    z-index: 10;
+}
+
+.carousel-info {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    box-shadow: #000000 0px 4px 8px 0px;
+    background-color: rgba(186, 186, 186, 0.7);
+    transform: translate(-50%, -50%);  
+    
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 25px;
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 5px;
+    z-index: 10;
+}
+.carousel-btn:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.header{
+   padding: 60px;
+   text-align: center;
+   font-size: 30px;
+
+}
+
+/* --- 6. Brands & Suggestion Modules (Flexbox) --- */
+.brands-list, .suggestion-list {
+    display: flex;
+    gap: 0px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.brands-card {
+    display: flex;
+    flex-direction: column;
+    width: 250px; 
+    background-color: white; 
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    overflow: hidden; 
+    margin-bottom: 20px;
+    margin: 20px;
+    justify-content: center;
+}
+
+.brands-title {
+    order: 1;
+    background-color: #778873; /* Strong Orange */
+    color: #000000;
+    padding: 16px;
+    border-radius: 6px 6px 0 0;
+    font-weight: 700;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.brands-card img {
+    width: 100%;
+    height: 140px; 
+    object-fit: cover;
+    display: block;
+    margin-top: -5px; 
+    border-radius: 0 0 6px 6px;
+}
+
+.card-img-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-weight: bold;
+  font-kerning: auto;
+  color: white
+}
+
+.card {
+    height: 450px;
+    width: 800px;
+    overflow: hidden;
+}
+
+#simon {
+    height: auto;
+    width: 100%;
+    background-position: top;
+
+}
+
+.container1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    height: auto;
+    width: auto;
+    margin: 100px;
 }
